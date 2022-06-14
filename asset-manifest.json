@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/carloseur24/TodoTaskApp/static/css/main.e15ad68e.css",
+    "main.js": "/carloseur24/TodoTaskApp/static/js/main.0d39ae27.js",
+    "index.html": "/carloseur24/TodoTaskApp/index.html",
+    "main.e15ad68e.css.map": "/carloseur24/TodoTaskApp/static/css/main.e15ad68e.css.map",
+    "main.0d39ae27.js.map": "/carloseur24/TodoTaskApp/static/js/main.0d39ae27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e15ad68e.css",
+    "static/js/main.0d39ae27.js"
+  ]
+}
