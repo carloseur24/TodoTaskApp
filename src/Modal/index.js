@@ -27,17 +27,17 @@ const Modal = () => {
                 Create your ToDos
                 </p>
                 </div>
-                <div >
-                    <p className='form'>
+                <section >
+                    <div className='form'>
                         Task
                         <div className='flex'>         
                             {<input type="text" placeholder='Description' className='form-design' value={text} onChange={ onChange}>
                                 </input>}
                             <p className='not-save' type="button" onClick={onCancel}><RiDeleteBack2Line/></p>
-                                </div>
-                    </p>
+                        </div>
+                    </div>
                     <button className='save' type="submit">Save</button>
-                </div>
+                </section>
             </form>
             <form id='form'>
             </form>
