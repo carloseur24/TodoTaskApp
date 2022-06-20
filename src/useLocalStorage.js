@@ -20,7 +20,7 @@ function useLocalStorage (itemName, initialValue) {
                 setLoading(false)
             }, 1000);
         } catch (error) {
-            setError(error)
+            throw new Error(error)
         }
     });
     //Update

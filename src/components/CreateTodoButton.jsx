@@ -4,8 +4,8 @@ import {TodoContext} from '../TodoContext'
 
 const CreateTodoButton = () => {
 const {
-  openModal,
-  setopenModal,
+  // openModal,
+  // setopenModal,
   setState
 } = useContext(TodoContext)
 
