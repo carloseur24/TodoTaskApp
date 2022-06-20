@@ -13,12 +13,10 @@ const root = ReactDOM.createRoot(
 );
 root.render( 
   <BrowserRouter>
-  <React.StrictMode>
     <TodoProvider>
       <Routes>
           <Route path='/' element={<AppUI/>} />
       </Routes>
     </TodoProvider>
-  </React.StrictMode>
   </BrowserRouter>
 );
