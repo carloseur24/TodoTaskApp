@@ -21,7 +21,7 @@ const AppUI = () => {
         <Router>
             <Title/>
             <Routes>
-            <Route path='/main' element={<Header>
+            <Route path='/' element={<Header>
             {/* <Header> */}
             {length !== 0 ? (<TodoCounter  />) : "" }
             {length !==0 ? (<TodoSearch />) : "" }
