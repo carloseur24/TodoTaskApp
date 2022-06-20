@@ -12,11 +12,12 @@ const root = ReactDOM.createRoot(
   document.getElementById('root')
 );
 root.render( 
-  <BrowserRouter>
+  // <BrowserRouter>
     <TodoProvider>
-      <Routes>
-          <Route path='/' element={<AppUI/>} />
-      </Routes>
+      {/* <Routes> */}
+          {/* <Route path='/' element={<AppUI/>} /> */}
+          <AppUI/>
+      {/* </Routes> */}
     </TodoProvider>
-  </BrowserRouter>
+  // </BrowserRouter>
 );
