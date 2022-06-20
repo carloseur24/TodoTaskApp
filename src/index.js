@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './AppUI';
+import {AppUI} from './AppUI';
+import {TodoProvider} from './TodoContext'
 import './styles/index.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root')
 );
 root.render( 
-  <Router>
-    <Routes>
-      <Route path="/" element={<App />}/>
-    </Routes>
-  </Router>
+  <TodoProvider>
+        <AppUI />
+  </TodoProvider>
 );
