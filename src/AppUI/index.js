@@ -1,8 +1,7 @@
-import Modal from '../Modal'
 import React, { useContext } from 'react'
-import {CreateTodoButton,CreateTodoButtonText,TodoCounter,TodoItem,TodoList,TodoSearch,Header} from '../components';
+import {Form,CreateTodoButton,CreateTodoButtonText,TodoCounter,TodoItem,TodoList,TodoSearch,Header} from '../components';
 import { TodoContext } from '../TodoContext/index';
-import '../styles/App.css';
+import '../App.css';
 import Title from '../components/Title';
 
 const AppUI = () => {
@@ -16,13 +15,13 @@ const AppUI = () => {
     } = useContext(TodoContext);
 
     return (
-        <React.Fragment>
+        <div>
             <Title/>
             <Header>
             {/* <Header> */}
             {length !== 0 ? (<TodoCounter  />) : "" }
             {length !==0 ? (<TodoSearch />) : "" }
-            <Modal class={"no-margin-top"}/>
+            <Form class={"no-margin-top"}/>
             {error && <p> Ocured an Error loading </p>}
             {loading && <p className='space space-up'> Wait! </p>}
             {(!loading && !length) && (<CreateTodoButtonText/>)}
@@ -47,7 +46,7 @@ const AppUI = () => {
             
             <CreateTodoButton/>
             </Header>
-        </React.Fragment>
+        </div>
     )
 }
 
