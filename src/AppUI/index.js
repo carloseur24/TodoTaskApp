@@ -4,8 +4,6 @@ import {CreateTodoButton,CreateTodoButtonText,TodoCounter,TodoItem,TodoList,Todo
 import { TodoContext } from '../TodoContext/index';
 import '../styles/App.css';
 import Title from '../components/Title';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 
 const AppUI = () => {
     const {
@@ -18,10 +16,9 @@ const AppUI = () => {
     } = useContext(TodoContext);
 
     return (
-        <Router>
+        <React.Fragment>
             <Title/>
-            <Routes>
-            <Route path='/' element={<Header>
+            <Header>
             {/* <Header> */}
             {length !== 0 ? (<TodoCounter  />) : "" }
             {length !==0 ? (<TodoSearch />) : "" }
@@ -48,13 +45,9 @@ const AppUI = () => {
                 </p>
                 )}
             
-            <CreateTodoButton  >
-
-                </CreateTodoButton>
-                {/* </Header> */}
-                </Header>}/>
-            </Routes>
-        </Router>
+            <CreateTodoButton/>
+            </Header>
+        </React.Fragment>
     )
 }
 
